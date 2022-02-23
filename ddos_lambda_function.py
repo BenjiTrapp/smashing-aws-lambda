@@ -3,10 +3,10 @@ from urllib.request import urlopen
 import threading
 
 def lambda_handler(event, context):
-    
     threads = []
-    for x in range(event['num_requests']):
-        print(x)
+    
+    for request in range(event['num_requests']):
+        print(request)
         thread = threading.Thread(target=send_request, args=(event['url'],))
         thread.start()
         threads.append(thread)
@@ -24,4 +24,4 @@ def send_request(url):
         response_content = response.read().decode('utf-8')
 
 if __name__ == "__main__":
-    lambda_handler({"url":<Your Website>, "num_requests": 1000}, None)
+    lambda_handler({"url": <Enter your Website here>, "num_requests": 1000}, None)
