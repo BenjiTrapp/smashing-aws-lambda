@@ -7,7 +7,7 @@ for x in range(1000):
     print(x)
     response = lam.invoke(
         Payload=json.dumps({"url":<Your Website>, "num_requests": 1000}).encode(),
-        FunctionName='ddostest',
+        FunctionName='lambda_spammer',
         InvocationType='Event'
     )
 
