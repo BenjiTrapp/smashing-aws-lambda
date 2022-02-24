@@ -1,0 +1,13 @@
+$ cat /proc/1/cgroup
+
+11:freezer:/sandbox-7f63be
+10:cpuset:/
+9:perf_event:/
+8:blkio:/
+7:memory:/sandbox-service-9ac6cf/sandbox-672d8a
+6:devices:/
+5:hugetlb:/
+4:net_cls,net_prio:/
+3:pids:/
+2:cpu,cpuacct:/sandbox-root-uPxa7U/sandbox-service-252528
+1:name=systemd:/system.slice/sandbox.servicecat /proc/1/cgroup
