@@ -1,0 +1,15 @@
+$ cat /etc/os-release
+NAME="Amazon Linux"
+VERSION="2"
+ID="amzn"
+ID_LIKE="centos rhel fedora"
+VERSION_ID="2"
+PRETTY_NAME="Amazon Linux 2"
+ANSI_COLOR="0;33"
+CPE_NAME="cpe:2.3:o:amazon:amazon_linux:2"
+HOME_URL="https://amazonlinux.com/"
+VARIANT_ID="202201251954-2.0.728.0"
+VARIANT_ID="202201252010-al2.730.0"
+
+$ uname -r
+4.14.252-207.481.amzn2.x86_64
